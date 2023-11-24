@@ -14,8 +14,13 @@
 <body>
     <div class="container p-5 my-5 border text-center fw-bold">
         <p>Hello TdA</p>
-      </div>
-      <script src="{% static 'javascript/script.js' %}"></script>
+    </div>
+    <div class="container p-5 my-5 border text-center fw-bold">
+      <p><b>Json Output</b></p>
+      <hr>
+      <p id="json-print"></p>
+  </div>
+    <script type="text/javascript" src="{% static 'javascript/script.js' %}" input-json="{% static 'jsonFiles/cake.json' %}"></script>
 </body>
 
 </html>
