@@ -1,0 +1,34 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Spasitelé Djanga</title>
+  {% load bootstrap5 %}
+  {% bootstrap_css %}
+  {% bootstrap_javascript %}
+</head>
+
+<body>
+    <div class="container p-5 my-5 border text-center">
+      <table class="table table-bordered table-striped">
+        <thead>
+          <tr>
+            <th scope="col">string</th>
+            <th scope="col">content of string</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>secret</td>
+            <td id="json-content"></td>
+          </tr>
+        </tbody>
+      </table>
+  </div>
+    <script type="text/javascript" src="{% static 'javascript/display_json.js' %}" input-json="{% static 'jsonFiles/cake.json' %}"></script>
+</body>
+
+</html>

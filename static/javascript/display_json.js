@@ -6,7 +6,7 @@ function json_cake_load(){
     .then(data => {
       console.log(data);
       console.log(data.secret);
-      document.getElementById("json-print").innerHTML = String(data.secret);
+      document.getElementById("json-content").innerHTML = String(data.secret);
     })
 }
 
