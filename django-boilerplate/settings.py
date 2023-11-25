@@ -38,6 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'info_app',
+    'api_app',
     'bootstrap5',
 ]
 
@@ -125,5 +126,5 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 # settings.py
 STATIC_URL = '/static/'
 STATICFILES_DIRS = [
-    BASE_DIR / "info_app/static",
+    BASE_DIR / "static",
 ]
