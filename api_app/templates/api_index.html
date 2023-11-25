@@ -12,20 +12,23 @@
 </head>
 
 <body>
-    <div class="container p-5 my-5 border text-center fw-bold">
-      <table class="table">
-        <tr>
+    <div class="container p-5 my-5 border text-center">
+      <table class="table table-bordered table-striped">
+        <thead>
+          <tr>
             <th scope="col">string</th>
             <th scope="col">content of string</th>
-            
-        </tr>
-        <tr>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
             <td>secret</td>
             <td id="json-content"></td>
-        </tr>
+          </tr>
+        </tbody>
       </table>
   </div>
-    <script type="text/javascript" src="{% static 'javascript/script.js' %}" input-json="{% static 'jsonFiles/cake.json' %}"></script>
+    <script type="text/javascript" src="{% static 'javascript/display_json.js' %}" input-json="{% static 'jsonFiles/cake.json' %}"></script>
 </body>
 
 </html>
