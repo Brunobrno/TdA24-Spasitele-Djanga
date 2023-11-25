@@ -24,4 +24,5 @@ urlpatterns = [
 >>>>>>> Stashed changes
     path('admin/', admin.site.urls),
     path('', include('info_app.urls')),
+    path('api/', include('api_app.urls')),
 ]
