@@ -17,6 +17,11 @@ from django.contrib import admin
 from django.urls import path, include
 
 urlpatterns = [
+<<<<<<< Updated upstream
+=======
+    path('/', include('info_app.urls')),
+    path('api/', include('api_app.urls')),
+>>>>>>> Stashed changes
     path('admin/', admin.site.urls),
     path('', include('info_app.urls')),
 ]
