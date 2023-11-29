@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     'info_app',
     'api_app',
     'bootstrap5',
+    'vizitka',
 ]
 
 MIDDLEWARE = [
