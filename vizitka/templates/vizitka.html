@@ -5,17 +5,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vizitka</title>
-    <link href=="{% static 'css/reset-style.css' %}" rel="stylesheet" type="text/css" />
     {% load bootstrap5 %}
     {% bootstrap_css %}
     {% bootstrap_javascript %}
-    <nav class="navbar navbar-light bg-black">
+    <link href="{% static 'css/reset-style.css' %}" rel="stylesheet"/>
+    <link href="{% static 'css/style.css' %}" rel="stylesheet" />
+</head>
+<body>
+    <nav class="navbar navbar-light bg-custom">
         <div class="text-white">
             <a>Tour de App</a>
         </div>
     </nav>
-</head>
-<body>
-    <h1>More</h1>
+    <div class="border border-secondary border-2 rounded">
+        <div class="lecturer text-center">
+        Border ve kterem bude info
+        </div>
+    </div>
 </body>
 </html>
