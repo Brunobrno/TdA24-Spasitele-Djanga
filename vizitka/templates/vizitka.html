@@ -11,15 +11,18 @@
     <link href="{% static 'css/reset-style.css' %}" rel="stylesheet"/>
     <link href="{% static 'css/style.css' %}" rel="stylesheet" />
 </head>
+<script type="text/javascript" src="{% static 'javascript/lecturer_json.js' %}" input-json="{% static 'jsonFiles/lecturer.json' %}"></script>
 <body>
     <nav class="navbar navbar-light bg-custom">
-        <div class="text-white">
-            <a>Tour de App</a>
+        <div class="image-logo">
+            <img src="{% static 'img/TeacherDigitalAgency_LOGO_colour-white.png'%}" alt="Logo TdA" width="100px" height="80px">
         </div>
     </nav>
-    <div class="border border-secondary border-2 rounded">
-        <div class="lecturer text-center">
-        Border ve kterem bude info
+    <div class="centered">
+        <div class="custom-border">
+            <div class="lecturer">
+            Border ve kterem bude info
+            </div>
         </div>
     </div>
 </body>
