@@ -1,0 +1,19 @@
+.bg-custom{
+    background-color: #333333;
+}
+.centered{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.custom-border{
+    border: 2px solid #ccc;
+    padding: 30px;
+    border-radius: 10px;
+    background-color: #333333;
+}
+.lecturer{
+    text-align: center;
+    color: #74C7D3;
+}

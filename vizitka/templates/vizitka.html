@@ -1,0 +1,29 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vizitka</title>
+    {% load bootstrap5 %}
+    {% bootstrap_css %}
+    {% bootstrap_javascript %}
+    <link href="{% static 'css/reset-style.css' %}" rel="stylesheet"/>
+    <link href="{% static 'css/style.css' %}" rel="stylesheet" />
+</head>
+<script type="text/javascript" src="{% static 'javascript/lecturer_json.js' %}" input-json="{% static 'jsonFiles/lecturer.json' %}"></script>
+<body>
+    <nav class="navbar navbar-light bg-custom">
+        <div class="image-logo">
+            <img src="{% static 'img/TeacherDigitalAgency_LOGO_colour-white.png'%}" alt="Logo TdA" width="100px" height="80px">
+        </div>
+    </nav>
+    <div class="centered">
+        <div class="custom-border">
+            <div class="lecturer">
+            Border ve kterem bude info
+            </div>
+        </div>
+    </div>
+</body>
+</html>
