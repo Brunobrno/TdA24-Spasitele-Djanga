@@ -17,3 +17,33 @@
     text-align: center;
     color: #74C7D3;
 }
+.css-selector {
+    background: linear-gradient(270deg, #00384d, #74c7d3, #ffffff, #333333, #fecb2e);
+    background-size: 1000% 1000%;
+
+    -webkit-animation: AnimationName 33s ease infinite;
+    -moz-animation: AnimationName 33s ease infinite;
+    -o-animation: AnimationName 33s ease infinite;
+    animation: AnimationName 33s ease infinite;
+}
+
+@-webkit-keyframes AnimationName {
+    0%{background-position:0% 51%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 51%}
+}
+@-moz-keyframes AnimationName {
+    0%{background-position:0% 51%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 51%}
+}
+@-o-keyframes AnimationName {
+    0%{background-position:0% 51%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 51%}
+}
+@keyframes AnimationName { 
+    0%{background-position:0% 51%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 51%}
+}
