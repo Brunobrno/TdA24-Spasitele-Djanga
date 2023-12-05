@@ -4,9 +4,7 @@ function json_lecturer_load(){
     fetch(jsonFile)
       .then(response => response.json())//.then je operace která čeká na slib (zrovna tady je response.json)
       .then(data => {
-
-        document.getElementById("json-content").innerHTML = String(data.secret);
-        
+        document.getElementById("test").innerHTML = String(data.location);
       })
   }
   
