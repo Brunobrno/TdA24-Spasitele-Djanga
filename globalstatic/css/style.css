@@ -16,15 +16,16 @@
 .lecturer{
     text-align: center;
     color: #74C7D3;
+    font-family: Open Sans Semibold;
 }
 .css-selector {
-    background: linear-gradient(270deg, #00384d, #74c7d3, #ffffff, #333333, #fecb2e);
+    background: linear-gradient(270deg, #fecb2e, #00384d, #74c7d3, #ffffff, #333333);
     background-size: 1000% 1000%;
 
-    -webkit-animation: AnimationName 33s ease infinite;
-    -moz-animation: AnimationName 33s ease infinite;
-    -o-animation: AnimationName 33s ease infinite;
-    animation: AnimationName 33s ease infinite;
+    -webkit-animation: AnimationName 50s ease infinite;
+    -moz-animation: AnimationName 50s ease infinite;
+    -o-animation: AnimationName 50s ease infinite;
+    animation: AnimationName 50s ease infinite;
 }
 
 @-webkit-keyframes AnimationName {
