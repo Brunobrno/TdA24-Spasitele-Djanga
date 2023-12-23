@@ -22,10 +22,38 @@
     <div class="centered">
         <div class="custom-border">
             <div class="lecturer">
-            Border ve kterem bude info
+
+                <div class="card text-center" style="width: 18rem;">
+
+                    <img class="card-img" id="lecturer_picture">
+                    
+                    <h5 class="card-header" id="title_before"></h5>
+                    <h5 class="card-header" id="first_name"></h5>
+                    <h5 class="card-header" id="middle_name"></h5>
+                    <h5 class="card-header" id="last_name"></h5>
+                    <h5 class="card-header" id="title_after"></h5>
+
+                    <!-- předtím tu byl obrázek -->
+
+                    <div class="card-body">
+                        <p id="location"></p>
+                        <hr>
+                        <p id="claim"></p>
+                        <hr>
+                        <div class="card-text" id="bio"></div>
+                        <hr>
+                        <ul class="list-group list-group-flush">
+                            <li class="card-header">tags</li>
+                            <li class="list-group-item" id="tag_name_0"></li>
+                            <li class="list-group-item" id="tag_name_3"></li>
+                            <li class="list-group-item" id="tag_name_7"></li>
+                        </ul>
+                    </div>
+                </div>
+
             </div>
         </div>
     </div>
-</div>
+    <script type="text/javascript" src="{% static 'javascript/lecturer_json.js' %}" input-json="{% static 'jsonFiles/lecturer.json' %}"></script>
 </body>
 </html>

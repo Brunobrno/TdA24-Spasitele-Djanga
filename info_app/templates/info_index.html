@@ -14,13 +14,18 @@
 
 <body>
     <div class="container p-5 my-5 border text-center fw-bold">
+      
+      <a href="/api" type="button" class="btn btn-primary">api</a>
+      <a href="/lecturer" type="button" class="btn btn-primary">lecturer</a>
+    </div>
+    <div class="container p-5 my-5 border text-center fw-bold">
         <p>Hello TdA</p>
     </div>
     <div class="container p-5 my-5 border text-center fw-bold">
       <p><b>Json Output</b></p>
       <hr>
       <p id="json-content"></p>
-  </div>
+    </div>
     <script type="text/javascript" src="{% static 'javascript/display_json.js' %}" input-json="{% static 'jsonFiles/cake.json' %}"></script>
 </body>
 

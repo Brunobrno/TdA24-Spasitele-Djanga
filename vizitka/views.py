@@ -1,8 +1,10 @@
 from django.shortcuts import render
 from django.template import loader
 # Create your views here.
-from django.http import HttpResponse
+import json
 
 def load_vizitka(request):
-    template =loader.get_template('vizitka.html')
-    return HttpResponse(template.render())
+    with open('globalstatic/jsonFiles/lecturer.json') as f:
+        data = json.load(f)
+    template = 'vizitka.html'
+    return render(request, template)
