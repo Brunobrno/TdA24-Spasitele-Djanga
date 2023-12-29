@@ -24,22 +24,32 @@
         <div class="card c-card-1">
             <div class="card-body">
                 <!--Zde půjde obrázek-->
-                <img class="card-img" id="lecturer_picture"style="border-radius:50%;">
+                <img class="card-img" id="lecturer_picture">
                 <div class="card c-card-2">
+                    <div class = "titul">
+                    <!--Tady jsou tituly-->
                         <h5 class="card-header">Titul:</h5>
-                    <div class="card-body">
-                        <div class ="name">
-                            <h5 class="card-body" id="title_before" style="font-weight: bold;"></h5>
-                                <h5 class="card-header">Jméno:</h5>
-                            <h5 class="card-body" id="first_name"></h5>
-                            <h5 class="card-body" id="middle_name"></h5>
-                            <h5 class="card-body" id="last_name"></h5>
-                            <h5 class="card-bofy" id="title_after"></h5>
-                        <hr>
-                        <p class="card-text">Tady budou tagy</p>
-                        </div>
+                        <span class="card-body" id="title_before"></span>
+                        <span class="card-body" id="title_after"></span>
                     </div>
+                        <!--Tady je jméno-->
+                        <div class ="name">
+                            <h5 class="card-header">Jméno:</h5>
+                            <span class="card-body" id="first_name"></span>
+                            <span class="card-body" id="middle_name"></span>
+                            <span class="card-body" id="last_name"></span>
+                        </div>
+                        <div class="card-body">
+                            <!--Město-->
+                            <p id="location"></p>
+                            <p id="claim"></p>
+                            <div class="card-text" id="bio"></div>
+                        </div>
                 </div>
+                    <h5 class="card-header">Tags</h5>
+                    <span class="badge badge-pill" id="tag_name_0"></span>
+                    <span class="badge badge-pill" id="tag_name_3"></span>
+                    <span class="badge badge-pill" id="tag_name_7"></span>
             </div>
             </div>
           

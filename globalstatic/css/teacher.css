@@ -40,3 +40,9 @@ body{
 .card-img{
     border-radius:50%;
 }
+#title_before{
+    font-weight: bold;
+}
+#title_after{
+    font-weight: bold;
+}
