@@ -5,15 +5,19 @@
     display:flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
 }
 .custom-border{
     border: 2px solid #ccc;
     padding: 30px;
     border-radius: 10px;
     background-color: #333333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-.lecturer{
-    text-align: center;
-    color: #74C7D3;
+
+.card{
+        text-align: center;
+        color: #74C7D3;
+        max-width: 100%;
 }
