@@ -1,0 +1,47 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="cs">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Něco o mně</title>
+        {% load bootstrap5 %}
+        {% bootstrap_css %}
+        {% bootstrap_javascript %}
+        <link href="https://cdn.jsdelivr.net/npm/reset-css@5.0.2/reset.min.css" rel="stylesheet">
+        <link href="{% static 'css/teacher.css' %}" rel="stylesheet" />
+    </head>
+    <script type="text/javascript" src="{% static 'javascript/lecturer_json.js' %}" input-json="{% static 'jsonFiles/lecturer.json' %}"></script>
+    <body>
+        <!--Tady začíná navbar-->
+        <div class="navbar bg-custom">
+            <div class="tda-logo">
+            <img src="{% static 'img/tda_black_logo.png'%}" alt="Logo TdA">
+            </div>
+        </div>
+        <!--Tady zase končí navbar-->
+
+        <div class="card c-card-1">
+            <div class="card-body">
+                <!--Zde půjde obrázek-->
+                <img class="card-img" id="lecturer_picture"style="border-radius:50%;">
+                <div class="card c-card-2">
+                        <h5 class="card-header">Titul:</h5>
+                    <div class="card-body">
+                        <div class ="name">
+                            <h5 class="card-body" id="title_before" style="font-weight: bold;"></h5>
+                                <h5 class="card-header">Jméno:</h5>
+                            <h5 class="card-body" id="first_name"></h5>
+                            <h5 class="card-body" id="middle_name"></h5>
+                            <h5 class="card-body" id="last_name"></h5>
+                            <h5 class="card-bofy" id="title_after"></h5>
+                        <hr>
+                        <p class="card-text">Tady budou tagy</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+          
+    </body>
+</html>
