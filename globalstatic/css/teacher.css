@@ -1,6 +1,4 @@
-body{
-    background-color: #333333;
-}
+body{ background-color: #333333;}
 .bg-custom{
     background-color: #74C7D3;
     display: flex;
@@ -44,5 +42,11 @@ body{
     font-weight: bold;
 }
 #title_after{
+    font-weight: bold;
+}
+.titul{
+    text-align: center;
+}
+#first_name{
     font-weight: bold;
 }
