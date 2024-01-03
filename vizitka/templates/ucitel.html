@@ -1,0 +1,59 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="cs">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Něco o mně</title>
+        {% load bootstrap5 %}
+        {% bootstrap_css %}
+        {% bootstrap_javascript %}
+        <link href="https://cdn.jsdelivr.net/npm/reset-css@5.0.2/reset.min.css" rel="stylesheet">
+        <link href="{% static 'css/teacher.css' %}" rel="stylesheet" />
+    </head>
+    <script type="text/javascript" src="{% static 'javascript/lecturer_json.js' %}" input-json="{% static 'jsonFiles/lecturer.json' %}"></script>
+    <body>
+        <!--Tady začíná navbar-->
+        <div class="navbar bg-custom">
+            <div class="tda-logo">
+            <img src="{% static 'img/tda_black_logo.png'%}" alt="Logo TdA">
+            </div>
+        </div>
+        <!--Tady zase končí navbar-->
+
+        <div class="card c-card-1">
+            <div class="card-body">
+                <!--Zde půjde obrázek-->
+                <img class="card-img" id="lecturer_picture">
+                <div class="card c-card-2">
+                    <div class = "titul">
+                    <!--Tady jsou tituly-->
+                        <h5 class="card-header">Titul:</h5>
+                        <span class="card-body" id="title_before"></span>
+                        <span class="card-body" id="title_after"></span>
+                    </div>
+                        <!--Tady je jméno-->
+                        <div class ="name">
+                            <h5 class="card-header">Jméno:</h5>
+                            <span class="card-body" id="first_name"></span>
+                            <span class="card-body" id="middle_name"></span>
+                            <span class="card-body" id="last_name"></span>
+                        </div>
+                        <div class="card-body">
+                            <!--Město-->
+                            <p id="location"></p>
+                            <p id="claim"></p>
+                            <div class="card-text" id="bio"></div>
+                        </div>
+                </div>
+            </div>
+            <div class = "tags">
+                <h5 class="card-header">Tags</h5>
+                <span class="badge badge-pill" id="tag_name_0"></span>
+                <span class="badge badge-pill" id="tag_name_3"></span>
+                <span class="badge badge-pill" id="tag_name_7"></span>
+            </div>
+            </div>
+          
+    </body>
+</html>

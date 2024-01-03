@@ -6,5 +6,5 @@ import json
 def load_vizitka(request):
     with open('globalstatic/jsonFiles/lecturer.json') as f:
         data = json.load(f)
-    template = 'vizitka.html'
+    template = 'ucitel.html'
     return render(request, template)

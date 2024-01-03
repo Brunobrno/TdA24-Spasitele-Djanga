@@ -13,20 +13,29 @@
 </head>
 <script type="text/javascript" src="{% static 'javascript/lecturer_json.js' %}" input-json="{% static 'jsonFiles/lecturer.json' %}"></script>
 <body>
-    <nav class="navbar navbar-light bg-custom">
+    <!--
+        <nav class="navbar navbar-light bg-custom">
         <div class="image-logo">
             <img src="{% static 'img/TeacherDigitalAgency_LOGO_colour-white.png'%}" alt="Logo TdA" width="100px" height="80px">
         </div>
     </nav>
-    <div class="css-selector">
+-->
     <div class="centered">
         <div class="custom-border">
             <div class="lecturer">
+                <div class="card" style="width: 18rem;">
 
-                <div class="card text-center" style="width: 18rem;">
-                    <h5 class="card-header" id="name"></h5>
                     <img class="card-img" id="lecturer_picture">
-                    <div class="card-body">
+                    <div class ="name" style="display: flex; align-items: center;justify-content: center;">
+                    <h5 class="card-header" id="title_before" style="font-weight: bold;"></h5>
+                    <h5 class="card-header" id="first_name"></h5>
+                    <h5 class="card-header" id="middle_name"></h5>
+                    <h5 class="card-header" id="last_name"></h5>
+                    <h5 class="card-header" id="title_after"></h5>
+                    </div>
+                    <!-- předtím tu byl obrázek -->
+
+                    <div class="card-body" style="">
                         <p id="location"></p>
                         <hr>
                         <p id="claim"></p>
@@ -34,14 +43,13 @@
                         <div class="card-text" id="bio"></div>
                         <hr>
                         <ul class="list-group list-group-flush">
-                            <li class="card-header">tags</li>
+                            <li class="card-header">Tags</li>
                             <li class="list-group-item" id="tag_name_0"></li>
                             <li class="list-group-item" id="tag_name_3"></li>
                             <li class="list-group-item" id="tag_name_7"></li>
                         </ul>
                     </div>
                 </div>
-
             </div>
         </div>
     </div>
