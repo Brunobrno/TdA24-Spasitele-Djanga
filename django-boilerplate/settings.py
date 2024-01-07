@@ -37,9 +37,10 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'bootstrap5',
+    'rest_framework',
     'info_app',
     'api_app',
-    'bootstrap5',
     'vizitka',
 ]
 
