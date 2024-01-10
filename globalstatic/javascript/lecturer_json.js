@@ -20,6 +20,11 @@ function json_lecturer_load(){
         document.getElementById("tag_name_0").innerHTML = String(data.tags[0].name);
         document.getElementById("tag_name_3").innerHTML = String(data.tags[3].name);
         document.getElementById("tag_name_7").innerHTML = String(data.tags[7].name);
+
+        document.getElementById("price").innerHTML = String(data.price_per_hour);
+
+        document.getElementById("telephone").innerHTML = String(data.contact.telephone_numbers[0]);
+        document.getElementById("email").innerHTML = String(data.contact.emails[0]);
         /* MYSLEL JSEM ŽE SE MÁJÍ VYPSAT VŠECHNY TAGY ALE NAKONEC JENOM SPECIFICKÉ (NECHAL JSEM TUHLE ČÁST KÓDU PROTOŽE BY SE MOHL POUŽÍT BUDOUCNU)
         for (let i = 0; i < jsonData.tags.length; i++) {
           document.getElementById(String(data.tags[i].name)).innerHTML = String(data.tags[i].name);

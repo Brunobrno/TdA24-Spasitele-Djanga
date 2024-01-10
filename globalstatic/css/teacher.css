@@ -32,21 +32,27 @@ body{ background-color: #333333;}
     border-radius: 20px;
 }
 .c-card-2{
-    border-color: #333333;
     margin-top: 50px;
+    text-align: center;
+    background-color: #333333;
+    color: #FECB2E;
+}
+.custom-border{
+    border-radius: 15px;
+    border-color: #333333;
 }
 .card-img{
     border-radius:50%;
 }
-#title_before{
-    font-weight: bold;
+.bg-tags{
+    background-color: #333333;
+    border-radius: 15px;
+    border-color: #333333;
+    color: #FECB2E;
+    margin-bottom: 15px;
 }
-#title_after{
-    font-weight: bold;
-}
-.titul{
-    text-align: center;
-}
-#first_name{
-    font-weight: bold;
+.badge{
+    background-color: #00384D;
+    color: #FECB2E;
+    margin: 10px;
 }
