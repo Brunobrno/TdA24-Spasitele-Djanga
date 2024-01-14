@@ -34,6 +34,15 @@ function json_lecturer_load(){
 
       })
   }
-  
   json_lecturer_load();
-  
+
+/*function bio(){
+  var bio = document.getElementById('bio');
+  var bioText = document.getElementById('button_bio');
+  while(true){
+    bio.style.display="none";
+    if( bioText.clicked == true){
+      bioText.style.display= "none";
+    }
+  }
+}*/

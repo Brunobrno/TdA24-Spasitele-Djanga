@@ -9,7 +9,14 @@
         {% bootstrap_css %}
         {% bootstrap_javascript %}
         <link href="https://cdn.jsdelivr.net/npm/reset-css@5.0.2/reset.min.css" rel="stylesheet">
-        <link href="{% static 'css/teacher.css' %}" rel="stylesheet" />
+        <link href="{% static 'css/lektor.css' %}" rel="stylesheet" />
+        <link href="{% static 'css/promene.css' %}" rel="stylesheet" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lalezar&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wdth@0,87.5;1,87.5&display=swap" rel="stylesheet">
     </head>
     <script type="text/javascript" src="{% static 'javascript/lecturer_json.js' %}" input-json="{% static 'jsonFiles/lecturer.json' %}"></script>
     <body>
@@ -24,7 +31,7 @@
         <div class="card c-card-1">
             <div class="card-body">
                 <!--Zde půjde obrázek-->
-                <img class="card-img" id="lecturer_picture">
+                <img class="card-img w-50 h-50 rotate-in-center" id="lecturer_picture">
                 
                 <div class="card c-card-2">
                     <div class = "titul">
@@ -42,15 +49,17 @@
                         </div>
                         <div class="card-body">
                             <!--Město-->
-                            <h5 class="card-header">Kde mě najdete? </h5>
+                            <h5 class="card-header">Kde mě najdete? </h5><br>
                             <p id="location"></p><br>
+                            <h5 class="card-header">Co dělám ? </h5><br>
                             <p id="claim"></p><br>
+                            <!--<button onclick="bio()" id="button_bio">Chceš zjisti něco mně? </button>-->
                             <div class="card-text" id="bio"></div>
                         </div>
                 </div>
             </div>
             <div class="bg-tags">
-                <h5 class="card-header text-center">Tags</h5>
+                <h5 class="card-header text-center">Tagy</h5>
                 <span class="badge badge-pill" id="tag_name_0"></span>
                 <span class="badge badge-pill" id="tag_name_3"></span>
                 <span class="badge badge-pill" id="tag_name_7"></span>
