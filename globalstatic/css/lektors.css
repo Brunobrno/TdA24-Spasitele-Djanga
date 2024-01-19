@@ -80,31 +80,30 @@ h5{
 .rotate-in-center{animation:rotate-in-center .6s ease-in both}
 @media only screen and (max-width:500px){
     .bg-custom {
-        width: 100%; /* Set the navbar to full-width */
-        text-align: center; /* Center the content on small screens */
+        width: 100%; 
+        text-align: center; 
     }
 
     .tda-logo img {
-        width: 30%; /* Adjust the logo width for smaller screens */
-        height: auto; /* Maintain aspect ratio */
-        margin: 0 auto; /* Center the logo within its container */
-        display: block; /* Ensure proper centering */
+        width: 30%; 
+        height: auto; 
+        margin: 0 auto; 
+        display: block; 
     }
 
     .c-card-1,
     .c-card-2 {
-        width: 90%; /* Set card widths to 90% of the viewport */
-        max-width: none; /* Remove the max-width restriction */
-        margin: 0 auto; /* Center the cards horizontally */
+        width: 90%; 
+        max-width: none;
+        margin: 0 auto; 
     }
     .bg-tags {
-        width: 90%; /* Set the width of the tags container */
-        max-width: none; /* Remove the max-width restriction */
-        margin: 0 auto; /* Center the tags container horizontally */
+        width: 90%; 
+        max-width: none; 
+        margin: 0 auto; 
     }
 
     .badge {
-        /* Add specific styles for tags on small screens */
         display: block;
         margin: 10px auto;
     }
