@@ -7,5 +7,4 @@ urlpatterns = [
     path('', views.load_info, name='index'),
     path('api/', load_api, name='api'),
     path('lecturer/', load_vizitka, name='index'),
-    path("kontakt/",include ("vizitka.urls")),
 ]

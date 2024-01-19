@@ -8,6 +8,3 @@ def load_vizitka(request):
         data = json.load(f)
     template = 'ucitel.html'
     return render(request, template)
-
-def kontakt_load (request):
-    return render(request, "kontakty.html")
