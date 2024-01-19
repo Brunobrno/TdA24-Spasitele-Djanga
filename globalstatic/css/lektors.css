@@ -11,6 +11,7 @@ h5{
     justify-content: center;
     align-items: center;
     margin-bottom: 50px;
+    
 }
 .center-logo {
     display: flex;
@@ -64,6 +65,7 @@ h5{
     border-color: #333333;
     color: #FECB2E;
     margin-bottom: 15px;
+    padding: 15px;
 }
 .badge{
     background-color: #00384D;
@@ -76,3 +78,34 @@ h5{
     margin-right: auto;
 }
 .rotate-in-center{animation:rotate-in-center .6s ease-in both}
+@media only screen and (max-width:500px){
+    .bg-custom {
+        width: 100%; /* Set the navbar to full-width */
+        text-align: center; /* Center the content on small screens */
+    }
+
+    .tda-logo img {
+        width: 30%; /* Adjust the logo width for smaller screens */
+        height: auto; /* Maintain aspect ratio */
+        margin: 0 auto; /* Center the logo within its container */
+        display: block; /* Ensure proper centering */
+    }
+
+    .c-card-1,
+    .c-card-2 {
+        width: 90%; /* Set card widths to 90% of the viewport */
+        max-width: none; /* Remove the max-width restriction */
+        margin: 0 auto; /* Center the cards horizontally */
+    }
+    .bg-tags {
+        width: 90%; /* Set the width of the tags container */
+        max-width: none; /* Remove the max-width restriction */
+        margin: 0 auto; /* Center the tags container horizontally */
+    }
+
+    .badge {
+        /* Add specific styles for tags on small screens */
+        display: block;
+        margin: 10px auto;
+    }
+}

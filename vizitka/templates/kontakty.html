@@ -1,0 +1,31 @@
+{% load static %}
+<!DOCTYPE <!DOCTYPE html>
+
+<html lang = "cs">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Kontakty</title>
+        {% load bootstrap5 %}
+        {% bootstrap_css %}
+        {% bootstrap_javascript %}
+        <link href="https://cdn.jsdelivr.net/npm/reset-css@5.0.2/reset.min.css" rel="stylesheet">
+        <link href="{% static 'css/kontakt.css' %}" rel="stylesheet" />
+        <link href="{% static 'css/promene.css' %}" rel="stylesheet" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lalezar&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wdth@0,87.5;1,87.5&display=swap" rel="stylesheet">
+    </head>
+    <script type="text/javascript" src="{% static 'javascript/lecturer_json.js' %}" input-json="{% static 'jsonFiles/lecturer.json' %}"></script>
+    <body>
+        <div class="card">
+            <div class = "Kontakty">
+                <h5 class="card-header">Kontakty</h5>
+                <span class="badge badge-pill" id="price">Ahdo</span>
+            </div>
+        </div>
+    </body>
+</html>
