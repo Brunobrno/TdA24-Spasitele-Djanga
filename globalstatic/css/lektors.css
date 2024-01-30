@@ -1,0 +1,110 @@
+body{ background-color: #333333;}
+h5{
+    font-size: 30px;
+    font-family: "Lalezar", system-ui;
+    font-weight: 400;
+    font-style: normal;
+}
+.bg-custom{
+    background-color: #74C7D3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+    
+}
+.center-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.tda-logo img {
+    width: 110px;
+    height: 90px;
+}
+.custom-border{
+    border-style: solid;
+    border-width: 5px;
+    border-color:#333333 ;
+    background-color: #74C7D3;
+}
+.c-card-1{
+    width: 50rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    background-color: #74C7D3;
+    max-width: 600px;
+    border-radius: 20px;
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings: "wdth" 87.5;
+}
+.c-card-2{
+    margin-top: 50px;
+    text-align: center;
+    background-color: #333333;
+    color: #FECB2E;
+    border-radius: 15px;
+}
+.custom-border{
+    border-radius: 15px;
+    border-color: #333333;
+}
+.card-img{
+    border-radius:50%;
+    max-width: 50%;
+    max-height: 50%;
+}
+.bg-tags{
+    background-color: #333333;
+    border-radius: 15px;
+    border-color: #333333;
+    color: #FECB2E;
+    margin-bottom: 15px;
+    padding: 15px;
+}
+.badge{
+    background-color: #00384D;
+    color: #FECB2E;
+    margin: 10px;
+}
+.card-img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.rotate-in-center{animation:rotate-in-center .6s ease-in both}
+@media only screen and (max-width:500px){
+    .bg-custom {
+        width: 100%; 
+        text-align: center; 
+    }
+
+    .tda-logo img {
+        width: 30%; 
+        height: auto; 
+        margin: 0 auto; 
+        display: block; 
+    }
+
+    .c-card-1,
+    .c-card-2 {
+        width: 90%; 
+        max-width: none;
+        margin: 0 auto; 
+    }
+    .bg-tags {
+        width: 90%; 
+        max-width: none; 
+        margin: 0 auto; 
+    }
+
+    .badge {
+        display: block;
+        margin: 10px auto;
+    }
+}
